@@ -10,22 +10,32 @@
  * El bloque try contiene el código que puede producir una excepción,
  * como errores de conexión o datos incorrectos.
  */
-public class Main {}
-public boolean loguearUsuario(String nombre, String pass) {
-    this.nombreEnSistema = nombre;
-    this.passEnSistema = pass;
-    for (int i = 0; i < userAIngresar; i++) {
-        if (listaUser[i].getNombre().equals(nombre) && listaUser[i].getContraseña().equals(pass)) {
-            return true;
+public static int usuario(String[] user, String nom){
+    Scanner sc = new Scanner(System.in);
+    nom = sc.nextLine();
+    for(int i = 0; i < user.length; i++){{
+    if(user[i].equals(nom)){
+    return i;
+
+    }
+    }
+    return -1;
+    }
+    public class int password(String[]contrasenia, String verificarcontraseña,int posición)
+    static void main(String[]args) {
+        String [] user = ("JohnPork""JefreyEpstein""ClaraMente""DiegoSilva""JorDih""KikoRivera")
+        String [] contraseña ("Sori""Mambo""Kilok""")
+        posición = 0;
+        String Main;
+        while(IngresaUser);
+        System.out.print("Ingresa el nombre del usuario: ");
+        posición=usuario(user, nom);
+        if (posicion =-1){
+            System.out.println("No existe el usuario");
+
         }
     }
-    return false;
 }
 
-public int cantidadUsuarios() {
-
-    if (loguearUsuario(nombreEnSistema, passEnSistema) == true) {
-        this.cantidadDeUsuariosLogueados++;
-    }
-    return cantidadDeUsuariosLogueados;
+void main() {
 }
